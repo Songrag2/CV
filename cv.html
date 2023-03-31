@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>curriculum vitae</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+    <style>
+        .head
+        {
+            background-image: linear-gradient(to right, rgb(226, 160, 160) , red);
+            height: 25px;
+            width:80px;
+            color: white;
+            text-align: center;
+            font-size:20px;
+            /*padding-top: 20px;
+            padding-bottom: 10px;*/
+            border: 1px solid black;
+            text-shadow: 5px 5px 10px blue ;
+            border-radius: 10px;
+            position: absolute ;
+            left:30px;
+            top:30px;
+        }
+        .nav
+        {
+            width: 40%;
+            border: 1px solid red;
+            color: white;
+            display: block;
+            margin: 15px auto;
+            background-color: rgb(197, 192, 192);
+            border-radius: 10px;
+            
+        }
+        .navbar li
+        {
+            display: inline;
+            font-size: 30px;
+            
+        }
+        .navbar li a
+        {
+            color:rgb(146, 3, 46);
+            text-decoration: none;
+            padding: 8px;
+            margin: auto;
+        }
+        .navbar li a:hover
+        {
+            
+            text-decoration: underline;
+        }
+
+        .intro
+        {
+            height: 400px;
+            width: 100%;
+           /* box-shadow: 10px 10px 20px gray;*/
+            background-image: linear-gradient(to right, black , gray);
+            border: 2px solid black;
+            border-radius: 10px;
+
+        }
+        .about
+        {
+            height: 400px;
+            width: 40%;
+            float: left;
+        }
+        .ima
+        {
+            height: 400px;
+            width: 60%;
+            float: left;
+        }
+       .text1
+       {
+        font-size: 40px;
+        color: white;
+        text-align: center;
+       }
+       .text2
+       {
+        font-size: 70px;
+        font-weight: 600;
+        color: white;
+        text-align: center;
+       }
+       .text3
+       {
+        font-size: 40px;
+        color: white;
+        text-align: center;
+       }
+       .text4
+       {
+        font-size: 50px;
+        color: white;
+        text-align: center;
+       }
+       .photo
+       {
+        height: 300px;
+        width: 300px;
+        border-radius: 100%;
+        position: relative;
+        top: 70px;
+        right: 50px;
+        left: 200px;
+       }
+       .data
+       {
+        height: 300px;
+        width: 100%;
+        border: 2px solid black;
+        border-radius: 10px;
+       /* background-color: aqua;*/
+    
+       }
+       .datahead
+       {
+        height: 35px;
+        width: 100%;
+        text-align: center;
+        /*display: inline;*/
+        font-size: 35px;
+        background-color: rgb(5, 71, 5);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-style: italic;
+        font-weight: 600;
+        color: rgb(175, 167, 167);
+       }
+       .datacontent
+       {
+        height: 255px;
+        width: 100%;
+        background-image: linear-gradient(to right, white , green);
+        font-size: 30px;
+        font-weight: 600;
+        font-family: cursive;
+        text-shadow: 2px 2px 5px palevioletred;
+        }
+        .skills
+        {
+            height: 700px;
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+        .skillhead
+        {
+         height: 35px;
+        width: 100%;
+        text-align: center;
+        font-size: 35px; 
+        background-color: rgb(84, 9, 107);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-style: italic;
+        font-weight: 600;
+        color: rgb(175, 167, 167);  
+        }
+        .skillcontent
+        {
+            height: 655px;
+            width: 100%;
+            font-size: 35px;
+            font-weight: 600;
+            font-family: cursive;
+            background-image: linear-gradient(to right, white ,rgb(124, 24, 155));
+        }
+        .language
+        {
+            height: 30px;
+            width:30%;
+            float: left;
+            text-align: right;
+            font-size: 20px;
+            font-family: cursive;
+            font-weight: 600;
+        }
+       
+        .skillgap
+        {
+            height: 30px;
+            width:60px;
+            float: left;
+            font-size: 20px;
+            font-family: cursive;
+            font-weight: 600;
+        }
+        .skillboxC
+        {
+            height: 30px;
+            width: 45%;
+            float: left;
+            background-color: rgb(77, 71, 71);
+        }
+        .skillboxP
+        {
+            height: 30px;
+            width: 35%;
+            float: left;
+            background-color: rgb(77, 71, 71);
+        }
+        .skillboxM
+        {
+            height: 30px;
+            width: 30%;
+            float: left;
+            background-color: rgb(77, 71, 71);
+        }
+        .skillboxH
+        {
+            height: 30px;
+            width: 50%;
+            float: left;
+            background-color: rgb(77, 71, 71);
+        }
+        .skillboxCSS
+        {
+            height: 30px;
+            width: 40%;
+            float: left;
+            background-color: rgb(77, 71, 71);
+        }
+        .skillboxCPP
+        {
+            height: 30px;
+            width: 45%;
+            float: left;
+            background-color: rgb(77, 71, 71);
+        }
+        footer
+        {
+            position: relative;
+            width: 50%;
+            margin: auto;
+            height: 200px;
+            background-color: rgb(64, 73, 73);
+            border: 2px solid black;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .conhead
+        {
+            font-family: cursive;
+            font-size: 30px;
+            font-weight: 600;
+            color: rgb(71, 4, 71);
+        }
+        .contact
+        {
+            display: flex;
+        }
+        .contact a
+        {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background:rgb(71, 4, 71); 
+            margin: 15px;
+            color: white;
+        }
+        .contact a:hover
+        {
+            transform: scale(1.3);
+            transition: .3s;  
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        CV
+    </div>
+    <div class="nav">
+        <ul class="navbar">
+            <li><a href="#">About Me  </a></li>
+            <li><a href="#">My Skills </a></li>
+            <li><a href="#">Contact Me</a></li>
+        </ul>
+    </div>
+
+
+    <br><br><br><br><br>
+    <div class="intro">
+        <div class="about">
+            <br><br><br><br>
+            <div class="text1">Hello my name is </div>
+            <div class="text2">Songrag Pathak</div>
+            <div class="text3">and </div>
+            <div class="text4"> I am an Electrical Engineer</div>
+            
+        </div>
+        <div class="ima">
+            <img src="bhaia picture.jpg" class="photo">
+        </div>
+    </div>
+    <br><br>
+    <div class="data">
+        <div class="datahead">
+            <div>About Me</div>
+        </div>
+        <div class="datacontent">
+            <br>
+            I am Songrag Pathak, an electrical engineering undergrad, currently in the 3rd year of my engineering course.I am doing my B.Tech from St. Thomas' College of Engineering and Technology. I will be graduating in 2024. Apart fromn my electrical core subjects, I am fascinated about coding. I look forward to joining the IT industry as a frontend developer
+        </div>
+    </div>
+    <br><br>
+    <div class="skills">
+        <div class="skillhead">My Skills</div>
+        <div class="skillcontent">
+            I have the following skills:-
+            <br><br>
+            <div class="language">
+                C Programming
+            </div>
+            <div class="skillgap">
+                : 75%
+            </div>
+            <div class="skillboxC">
+            </div>
+            <br><br>
+            <div class="language">
+                Python
+            </div>
+            <div class="skillgap">
+                : 65%
+            </div>
+            <div class="skillboxP">
+            </div>
+            <br><br>
+             <div class="language">
+                MATLAB
+            </div>
+            <div class="skillgap">
+                : 60%
+            </div>
+            <div class="skillboxM">
+            </div>
+             <br><br>
+             <div class="language">
+                HTML
+            </div>
+            <div class="skillgap">
+                : 80%
+            </div>
+            <div class="skillboxH">
+            </div>
+             <br><br>
+             <div class="language">
+                CSS
+            </div>
+            <div class="skillgap">
+                : 70%
+            </div>
+            <div class="skillboxCSS">
+            </div>
+             <br><br>
+             <div class="language">
+                C++
+            </div>
+            <div class="skillgap">
+                : 75%
+            </div>
+            <div class="skillboxCPP">
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <footer>
+        <p class="conhead">Contact me </p>
+        
+        <div class="contact">
+         <a href="#"><i class="fa-brands fa-facebook"></i></a> 
+         <a href="https://www.linkedin.com/in/songrag-pathak-811820254"><i class="fa-brands fa-linkedin"></i></a>
+         <a href="#"><i class="fa-brands fa-instagram"></i></a> 
+        </div>
+    </footer>
+
+</body>
+</html>
